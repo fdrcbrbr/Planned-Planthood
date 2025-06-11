@@ -177,3 +177,26 @@ body {
   background-color: var(--clr-accent-light-1);
   color: var(--clr-primary-dark);
 }
+
+header{
+  background-color: var(--clr-neutral-100);
+  display: flex;
+  max-width: 1280px;
+  height: 4em;
+}
+
+.logo{
+  width: 50%;
+  display: flex;
+}
+
+header li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+section .hero{
+  background-color: var(--clr-green-100);
+  display: flex;
+  justify-content: center;
+}
