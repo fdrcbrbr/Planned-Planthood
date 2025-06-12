@@ -217,15 +217,6 @@ header{
   list-style-type: none;
 }
 
-
-
-
-
-
-
-
-
-
 h1{
   font: var(--fw-700) var(--fs-600) var(--font-base);
 }
@@ -250,9 +241,18 @@ h1{
 
 .newsletter{
   background-color: var(--clr-neutral-100);
+  display: flex;
 }
 
-.cards{
+.newsletter p{
+  font: var(--fw-600) var(--fs-400) var(--font-base);
+}
+
+.newsletter svg{
+    stroke: var(--clr-green-400);
+  width: 42px;
+  height: 42px;
+  stroke-width: 12;
 }
 
 .search{
