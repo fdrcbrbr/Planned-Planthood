@@ -53,12 +53,18 @@
       </section>
 
       <form aria-label="newsletter" class="newsletter">
-        <div>
+        <div class="newsletter__input">
           <p>Anmäl dig till vårt nyhetsbrev så du inte missar 
             en utsådd!
           </p>
-          <input/>
+          <input 
+          type="email" 
+          class="email-input"
+          placeholder="email@domain.com"
+          >
+          <button class="submit-button">Skicka</button>
         </div>
+        <div class="planting">
           <svg
             aria-hidden="true"
             width="199"
@@ -140,25 +146,30 @@
               stroke="white"
             />
           </svg>
+        </div>
       </form>
 
       <section class="cards">
         <div class="card">
-          <img/>
-          <p>Blommor</p>
-          <p>Ätbart</p>
-          <p>Grönska</p>
+          <img src="./Assets/images/cucumber.jpg"/>
+          <button>Blommor</button>
+          <button>Ätbart</button>
+          <button>Grönska</button>
           <h3>Gurka</h3>
           <p>Gurka växer snabbt, är enkel att odla och ger mängder 
             med gurkor, bara man är noga med vattning, omplantering, 
             duschning och gödsling.</p>
-          <img/>
-          <p>Coolio</p>
-          <p>2024-04-01</p>
+          <div class="card__footer">
+            <img src="./Assets/images/avt_1.jpg" 
+            class="avatar" 
+            data-type="featured-1"/>
+            <p data-type="featured-2">Coolio</p>
+            <time data-type="featured-3" datetime="2024-04-01">2024-04-01</time>
+          </div>
         </div>
 
         <div class="card">
-          <img/>
+          <img src="./Assets/images/tomat.jpg"/>
           <p>Solälskande</p>
           <p>Lättodlat</p>
           <p>Ätbart</p>
@@ -171,7 +182,7 @@
         </div>
         
         <div class="card">
-          <img/>
+          <img src="./Assets/images/pelargon.jpg"/>
           <p>Dekorativ</p>
           <p>Färgstark</p>
           <p>Tålig</p>
@@ -185,7 +196,7 @@
         </div>
 
         <div class="card">
-          <img/>
+          <img src="./Assets/images/basil.jpg"/>
           <p>Kryddor</p>
           <p>Doftande</p>
           <p>Solälskande</p>
@@ -198,7 +209,7 @@
         </div>
 
         <div class="card">
-          <img/>
+          <img src="./Assets/images/sallad.jpg"/>
           <p>Snabbväxande</p>
           <p>Ätbart</p>
           <p>Grönska</p>
@@ -212,7 +223,7 @@
 
 
         <div class="card">
-          <img/>
+          <img src="./Assets/images/ferns.jpg"/>
           <p>Luftfuktande</p>
           <p>Grönska</p>
           <p>Dekorativ</p>
@@ -234,7 +245,7 @@
     <footer>
       <section>
         <div>
-          <img src="./Assets/images/lofo.svg"/>
+          <img src="./Assets/images/logo.svg"/>
           <h3>Planned Planthood</h3>
         </div>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
