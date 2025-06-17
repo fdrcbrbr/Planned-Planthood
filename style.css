@@ -354,7 +354,7 @@ section.cards{
   box-shadow: var(--border-shadow);
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 5;
+  grid-row: span 6;
 
     img{
     padding-bottom: 2vh ;
@@ -377,24 +377,25 @@ section.cards{
 
     h3{
       padding: 1vh 0 1vh 0;
-  }
+    }
 
-  .avatar{
-        /* border-radius: 100%;
-        border: 1px solid var(--clr-neutral-400); */
-        width: 3rem;
-        padding: 0;
-      }
+    p{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
     }
 
     .card__footer{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: 0.5rem 0 0 0 ;
-  font: var(--fw-500) var(--fs-300)/0.8 var(--font-base);
-  img[data-type="featured-1"] {
-    grid-row: span 2;
+      grid-row: 5 / 7;
     }
+
+    .avatar{
+      width: 3rem;
+      padding: 0;
+    }
+}
+
+.card__footer{
+  display: flex;
 }
 
 
