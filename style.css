@@ -407,13 +407,14 @@ section.cards{
     grid-row: 1 / 2;
     grid-column: 1 / 4;
     object-fit: cover;
+    aspect-ratio: 4 / 5;
+
     }
 
     .tag-list {
     list-style-type: none;
     grid-row: 2 / 3;
     grid-column: 1 / 4;
-    
     }
     
     h3{
@@ -429,29 +430,37 @@ section.cards{
 
     .card__footer{
       grid-row: 5 / 7;
-    }
-
-    .avatar{
-      width: 3rem;
-      padding: 0;
+      grid-column: 1 / 4;
     }
 }
 
 .tag-list{
   display: flex;
   flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
 .card__footer{
   display: flex;
 }
 
+.avatar{
+  width: 3rem;
+  padding: 0;
+}
+
+.avatar__info{
+  display: flex;
+  flex-direction: column;
+}
+
 [class^="tag--"] {
-  padding: 5px 10px;
+  font-size: var(--fs-100);
   border-radius: 25px;
   padding: 0.2rem 0.5rem;
   color: var(--clr-neutral-100);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .tag--decorative { background-color: var(--clr-decorative); }
@@ -466,12 +475,6 @@ section.cards{
 .tag--flower { background-color: var(--clr-flower); }
 .tag--easy { background-color: var(--clr-easy); }
 .tag--green { background-color: var(--clr-green); }
-
-
-
-
-
-
 
 /*            ARCHIVE         */
 
@@ -500,12 +503,13 @@ section.cards{
   width: 7rem;
   border-radius: 50px;
   border: none;
-  padding: 0.2rem;
+  padding: 0.5rem;
   background-color: var(--clr-green-400);
   color: var(--clr-neutral-100);
-  font-size: var(--fs-100);
-  font-weight: bold;
+  font-size: var(--fs-300);
   justify-self: end;
+  width: fit-content;
+  height: fit-content;
   }
 }
 
@@ -536,6 +540,7 @@ color: var(--clr-neutral-100);
 .footer__logo{
     font: var(--fw-600) var(--fs-400)/0.8 var(--font-base);
     color: var(--clr-neutral-100);
+    padding-top: 3rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -544,34 +549,21 @@ color: var(--clr-neutral-100);
         text-transform: uppercase;
         padding: 1rem
     }
-
-    p{
-
-    }
-
-    svg{
-    stroke: var(--clr-green-400);
-    width: 42px;
-    height: 42px;
-    stroke-width: 12;
-    }
   }
 
 .footer__nav{
 
-
   ul{
     list-style-type: none;
+    padding-top: 3rem;
   }
 
   li{
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     color: var(--clr-neutral-100);
     font: var(--fw-600) var(--fs-400)/0.8 var(--font-base);
     color: var(--clr-neutral-100);
   }
-
-
 }
 
 
