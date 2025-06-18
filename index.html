@@ -21,12 +21,14 @@
             </svg>
             <h1>Planned<br>Planthood</h1>
           </a>
-          <ul class="header_nav">
-            <li href="#">Hem</li>
-            <li href="#">Historik</li>
-            <li href="#">Tips</li>
-            <li href="#">Kontakt</li>
-          </ul>
+          <a>
+            <ul class="header_nav">
+              <li href="#">Hem</li>
+              <li href="#">Historik</li>
+              <li href="#">Tips</li>
+              <li href="#">Kontakt</li>
+            </ul>
+          </a>
         </nav>
       </header>
     </div>
@@ -57,17 +59,19 @@
       </div>
 
       <div class="newsletter_container">
-        <form aria-label="newsletter" class="newsletter">
-          <div class="newsletter__input">
+        <form aria-label="newsletter">
+          <div class="newsletter">
           <h2>Anmäl dig till vårt nyhetsbrev så du inte missar 
               en utsådd!
           </h2>
-            <input 
-            type="email" 
-            class="email-input"
-            placeholder="email@domain.com"
-            >
-            <button class="submit-button">Skicka</button>
+            <div class="newsletter__input">
+              <input 
+              type="email" 
+              name="email" 
+              placeholder="email@domain.com"
+              />
+              <button>Skicka</button>
+            </div>
           </div>
           <div class="planting__logo">
             <svg
@@ -161,9 +165,9 @@
             <img src="https://images.unsplash.com/photo-1602343244137-a142ba5c7b22?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             Alt="Gurkor"/>
             <ul class="tag-list">
-              <li class="tag--red tag">Blommor</li>
-              <li class="tag--blue tag">Ätbart</li>
-              <li class="tag--purple tag">Gronska</li>
+              <li class="tag--flower">Blommor</li>
+              <li class="tag--edible">Ätbart</li>
+              <li class="tag--green">Gronska</li>
             </ul>
             <h3>Gurka</h3>
             <p>Gurka växer snabbt, är enkel att odla och ger mängder 
@@ -182,9 +186,9 @@
             <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="En tomat"/>
             <ul class="tag-list">
-              <li class="tag--red tag">Solälskande</li>
-              <li class="tag--blue tag">Lättödlat</li>
-              <li class="tag--purple tag">Ätbart</li>
+              <li class="tag--sunloving">Solälskande</li>
+              <li class="tag--easy">Lättödlat</li>
+              <li class="tag--edible">Ätbart</li>
             </ul>
             <h3>Tomat</h3>
             <p>En perfekt grönsak att odla på balkongen eller i trädgården. 
@@ -202,10 +206,10 @@
             <img src="https://images.unsplash.com/photo-1602749240253-b61f74b75dd9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Pelargon blomma"/>
             <ul class="tag-list">
-              <li class="tag--red tag">Dekorativ</li>
-              <li class="tag--blue tag">Färgstark</li>
-              <li class="tag--purple tag">Tålig</li>
-              <li class="tag--purple tag">Blommor</li>
+              <li class="tag--decorative">Dekorativ</li>
+              <li class="tag--colorfu">Färgstark</li>
+              <li class="tag--robust">Tålig</li>
+              <li class="tag--flower">Blommor</li>
             </ul>
             <h3>Pelargon</h3>
             <p>En vacker och lättskött blomma som trivs både inne 
@@ -223,9 +227,9 @@
             <img src="https://images.unsplash.com/photo-1527964105263-1ac6265a569f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Basilika"/>
             <ul class="tag-list">
-              <li class="tag--red tag">Kryddor</li>
-              <li class="tag--blue tag">Doftande</li>
-              <li class="tag--purple tag">Solälskande</li>
+              <li class="tag--air">Kryddor</li>
+              <li class="tag--fragrant">Doftande</li>
+              <li class="tag--sunloving">Solälskande</li>
             </ul>
             <h3>Basilika</h3>
             <p>En fantastisk krydda för pastarätter och sallader. 
@@ -243,9 +247,9 @@
             <img src="https://images.unsplash.com/photo-1622205313162-be1d5712a43f?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Sallad i en tallrik"/>
             <ul class="tag-list">
-              <li class="tag--red tag">Snabbväxande</li>
-              <li class="tag--blue tag">Ätbart</li>
-              <li class="tag--purple tag">Gronska</li>
+              <li class="tag--fast">Snabbväxande</li>
+              <li class="tag--edible">Ätbart</li>
+              <li class="tag--green tag">Gronska</li>
             </ul>
             <h3>Sallad</h3>
             <p>Sallad är en av de enklaste grönsakerna att odla och 
@@ -264,9 +268,9 @@
             <img src="https://images.unsplash.com/photo-1474139346426-aa184093f6d0?q=80&w=1329&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Ormbunke blad"/>
             <ul class="tag-list">
-              <li class="tag--red tag">Luftfuktande</li>
-              <li class="tag--blue tag">Gronska</li>
-              <li class="tag--purple tag">Dekorativ</li>
+              <li class="tag--moistening">Luftfuktande</li>
+              <li class="tag--green">Gronska</li>
+              <li class="tag--decorative">Dekorativ</li>
             </ul>
             <h3>Ormbunke</h3>
             <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
