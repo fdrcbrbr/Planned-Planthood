@@ -9,7 +9,7 @@
   <body>
     <div class="header_container">
       <header>
-        <nav class="primary">
+        <nav class="header__nav">
           <a href="/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="214" height="210" viewBox="0 0 214 210">
               <g fill="none" stroke-width="12">
@@ -59,9 +59,9 @@
       <div class="newsletter_container">
         <form aria-label="newsletter" class="newsletter">
           <div class="newsletter__input">
-            <p>Anmäl dig till vårt nyhetsbrev så du inte missar 
+          <h2>Anmäl dig till vårt nyhetsbrev så du inte missar 
               en utsådd!
-            </p>
+          </h2>
             <input 
             type="email" 
             class="email-input"
@@ -160,9 +160,11 @@
           <div class="card">
             <img src="https://images.unsplash.com/photo-1602343244137-a142ba5c7b22?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             Alt="Gurkor"/>
-            <button>Blommor</button>
-            <button>Ätbart</button>
-            <button>Grönska</button>
+            <ul class="tag-list">
+              <li class="tag--red tag">Blommor</li>
+              <li class="tag--blue tag">Ätbart</li>
+              <li class="tag--purple tag">Gronska</li>
+            </ul>
             <h3>Gurka</h3>
             <p>Gurka växer snabbt, är enkel att odla och ger mängder 
               med gurkor, bara man är noga med vattning, omplantering, 
@@ -179,9 +181,11 @@
           <div class="card">
             <img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="En tomat"/>
-            <button>Solälskande</button>
-            <button>Lättodlat</button>
-            <button>Ätbart</button>
+            <ul class="tag-list">
+              <li class="tag--red tag">Solälskande</li>
+              <li class="tag--blue tag">Lättödlat</li>
+              <li class="tag--purple tag">Ätbart</li>
+            </ul>
             <h3>Tomat</h3>
             <p>En perfekt grönsak att odla på balkongen eller i trädgården. 
               Ger riklig skörd under sommaren.</p>
@@ -197,10 +201,12 @@
           <div class="card">
             <img src="https://images.unsplash.com/photo-1602749240253-b61f74b75dd9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Pelargon blomma"/>
-            <button>Dekorativ</button>
-            <button>Färgstark</button>
-            <button>Tålig</button>
-            <button>Blommor</button>
+            <ul class="tag-list">
+              <li class="tag--red tag">Dekorativ</li>
+              <li class="tag--blue tag">Färgstark</li>
+              <li class="tag--purple tag">Tålig</li>
+              <li class="tag--purple tag">Blommor</li>
+            </ul>
             <h3>Pelargon</h3>
             <p>En vacker och lättskött blomma som trivs både inne 
               och ute under sommaren.</p>
@@ -216,9 +222,11 @@
           <div class="card">
             <img src="https://images.unsplash.com/photo-1527964105263-1ac6265a569f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Basilika"/>
-            <button>Kryddor</button>
-            <button>Doftande</button>
-            <button>Solälskande</button>
+            <ul class="tag-list">
+              <li class="tag--red tag">Kryddor</li>
+              <li class="tag--blue tag">Doftande</li>
+              <li class="tag--purple tag">Solälskande</li>
+            </ul>
             <h3>Basilika</h3>
             <p>En fantastisk krydda för pastarätter och sallader. 
               Trivs bäst i ett soligt fönster.</p>
@@ -234,9 +242,11 @@
           <div class="card">
             <img src="https://images.unsplash.com/photo-1622205313162-be1d5712a43f?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Sallad i en tallrik"/>
-            <button>Snabbväxande</button>
-            <button>Ätbart</button>
-            <button>Grönska</button>
+            <ul class="tag-list">
+              <li class="tag--red tag">Snabbväxande</li>
+              <li class="tag--blue tag">Ätbart</li>
+              <li class="tag--purple tag">Gronska</li>
+            </ul>
             <h3>Sallad</h3>
             <p>Sallad är en av de enklaste grönsakerna att odla och 
               ger snabba resultat för färska måltider.</p>
@@ -253,9 +263,11 @@
           <div class="card">
             <img src="https://images.unsplash.com/photo-1474139346426-aa184093f6d0?q=80&w=1329&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Ormbunke blad"/>
-            <button>Luftfuktande</button>
-            <button>Grönska</button>
-            <button>Dekorativ</button>
+            <ul class="tag-list">
+              <li class="tag--red tag">Luftfuktande</li>
+              <li class="tag--blue tag">Gronska</li>
+              <li class="tag--purple tag">Dekorativ</li>
+            </ul>
             <h3>Ormbunke</h3>
             <p>En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
             <div class="card__footer">
@@ -313,8 +325,8 @@
 
     <div class="footer_container">
       <footer>
-        <section>
-          <div>
+        <section class="footer__card">
+          <div class="footer__card_logo">
             <svg
                 width="214"
                 height="210"
@@ -330,17 +342,19 @@
                   />
                 </g>>
             </svg>
-            <h3>Planned Planthood</h3>
+            <h3>Planned<br>Planthood</h3>
           </div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing 
             elit. Neque, veniam ducimus aut sint atque 
             ullam alias perspiciatis fuga. Consequuntur 
             nesciunt ea corrupti aperiam fugit inventore 
             ratione earum. Iure, eius molestias?</p>
+          <svg class="small-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-3-3h24v24H-3z"/><path d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z" fill="#FFF"/></g></svg>
           <p>Telefon: 020-1234567</p>
+          <svg class="small-icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-2-4h24v24H-2z"/><path d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z" fill="#FFF"/></g></svg>
           <p>info@plannedplant.com</p>
         </section>
-        <nav>
+        <nav class="footer__nav">
           <ul>
             <li>Hem</li>
             <li>Historik</li>

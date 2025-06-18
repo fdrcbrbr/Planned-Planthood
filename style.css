@@ -202,7 +202,7 @@ header{
   max-width: 70%;
 }
 
-.primary{
+.header__nav{
     display: flex;
     justify-content: center;
     font: var(--fw-600) var(--fs-400)/0.8 var(--font-base);
@@ -218,7 +218,7 @@ header{
   align-items: center;
 }
 
-.primary ul{
+.header__nav ul{
   width: 50%;
   display: flex;
   align-items: center;
@@ -355,6 +355,7 @@ section.cards{
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 6;
+  
 
     img{
     padding-bottom: 2vh ;
@@ -363,20 +364,24 @@ section.cards{
     object-fit: cover;
     }
 
-    button{
-    border-radius: 50px;
-    border: none;
-    padding: 0.2rem;
-    text-transform: uppercase;
-    display: block;
-    color: var(--clr-neutral-100);
-    font-size: var(--fs-100);
-    font-weight: bold;
+    .tag-list {
+    list-style-type: none;
     grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    
     }
 
+    .tag {
+    border-radius: 25px;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid red;
+    text-align: center;
+    }
+    
     h3{
       padding: 1vh 0 1vh 0;
+      grid-row: 3 / 4;
+      grid-column: 1 / 4;
     }
 
     p{
@@ -394,6 +399,11 @@ section.cards{
     }
 }
 
+.tag-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card__footer{
   display: flex;
 }
@@ -405,25 +415,25 @@ section.cards{
 
 /*            ARCHIVE         */
 
+.archive_container{
+  margin-bottom: 3rem;
+}
+
 .archive{
   background-color: var(--clr-neutral-100);
   padding: 3rem 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+
+  .planting__logo{
+    margin-right: 5rem;
+  }
   
   .archive__card{
     width: 25rem;
     display: grid;
     justify-self: center;
-
-  }
-
-  .archive svg{
-    stroke: var(--clr-green-400);
-    width: 42px;
-    height: 42px;
-    stroke-width: 12;
   }
 
   button{
@@ -443,4 +453,46 @@ section.cards{
 
 footer{
   margin: 0 auto;
+  max-width: 70%;
+  padding-top: 3rem;
+  display: flex;
 }
+
+.footer__card{
+  .small-icon{
+    display: inline;
+  }
+}
+
+.footer__card_logo{
+    font: var(--fw-600) var(--fs-400)/0.8 var(--font-base);
+    color: var(--clr-neutral-100);
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    h3{
+        text-transform: uppercase
+    }
+  }
+
+.footer__nav{
+ justify-self: flex-end;
+
+
+  ul{
+    list-style-type: none;
+  }
+
+  li{
+    padding: 0.75rem 0;
+    color: var(--clr-neutral-100);
+  }
+
+
+}
+
+
+
+
+
