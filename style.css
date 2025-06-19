@@ -195,7 +195,6 @@ body {
   margin: 0 auto;
 }
 
-
 /*            HEADER           */
 
 header{
@@ -224,7 +223,6 @@ header{
     height: 42px;
     stroke-width: 12;
   }
-
 
   nav{
     display: flex;
@@ -316,19 +314,21 @@ header{
 }
 
 .hero__img{
-
   list-style-type: none;
   border: 10px solid var(--clr-neutral-100);
   margin-top: 1em;
   box-shadow: var(--border-shadow);
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 2fr;
-  grid-auto-rows: 1fr;
   align-items: stretch;
 }
 
-.hero__img img[data-type="featured-1"] {grid-row: span 2;}
-.hero__img img[data-type="featured-5"] {grid-column: 2 / 4 ;}
+.hero__img img[data-type="featured-1"] {
+  grid-row: span 2;
+}
+.hero__img img[data-type="featured-5"] {
+  grid-column: 2 / 4 ;
+}
 
 .hero__img img{
   object-fit: cover;
@@ -342,8 +342,12 @@ header{
   .hero__img img{
   object-fit: cover;
   }
-  .hero__img img[data-type="featured-1"] {grid-row: span 1;}
-  .hero__img img[data-type="featured-5"] {grid-column: 2 / 3 ;}
+  .hero__img img[data-type="featured-1"] {
+    grid-row: span 1;
+  }
+  .hero__img img[data-type="featured-5"] {
+    grid-column: 2 / 3 ;
+  }
 }
 
 @media (max-width: 768px) {
@@ -353,7 +357,9 @@ header{
   .hero__img img{
   object-fit: cover;
   }
-  .hero__img img[data-type="featured-5"] {grid-column: 1 / 2 ;}
+  .hero__img img[data-type="featured-5"] {
+    grid-column: 1 / 2 ;
+  }
 }
 
 /*          NEWSLETTER           */
@@ -365,8 +371,14 @@ header{
   justify-content: center;
   justify-self: center;
 
-  h2{
+  label{
+    display: none;
+  }
+
+  p{
     margin-right: 1rem;
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
   }
 
   .newsletter__input{
@@ -432,11 +444,10 @@ header{
     grid-row: -2;
   }
 
-  .newsletter__input{
-    justify-self: center
+  .newsletter{
+    justify-items: center;
+    text-align: center;
   }
-
-
 }
 
 
@@ -449,12 +460,6 @@ section.cards{
   margin: 0 auto;
   display: grid;
   grid-template-columns:  repeat(4, 1fr);
-}
-
-@media (max-width: 1280px) {
-  section.cards{
-    grid-template-columns:  repeat(2, 1fr);
-  }
 }
 
 .card{ 
@@ -541,6 +546,22 @@ section.cards{
 .tag--easy { background-color: var(--clr-easy); }
 .tag--green { background-color: var(--clr-green); }
 
+@media (max-width: 1280px) {
+  section.cards{
+    grid-template-columns:  repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  section.cards{
+    grid-template-columns:  1fr;
+  }
+
+  .card > img{
+    aspect-ratio: 3 / 2;
+  }
+}
+
 /*            ARCHIVE         */
 
 .archive_container{
@@ -554,10 +575,19 @@ section.cards{
   display: flex;
   justify-content: center;
 
-  .planting__logo{
-    margin-right: 5rem;
+  h3{
+    line-height: normal;
   }
-  
+
+  .planting__logo {
+    padding: 2.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    background-color: var(--clr-green-400);
+    margin-right: 2rem;
+  }
+
   .archive__card{
     width: 25rem;
     display: grid;
@@ -565,16 +595,16 @@ section.cards{
   }
 
   button{
-  width: 7rem;
-  border-radius: 50px;
-  border: none;
-  padding: 0.5rem;
-  background-color: var(--clr-green-400);
-  color: var(--clr-neutral-100);
-  font-size: var(--fs-500);
-  justify-self: end;
-  width: fit-content;
-  height: fit-content;
+    width: 7rem;
+    border-radius: 50px;
+    border: none;
+    padding: 0.5rem;
+    background-color: var(--clr-green-400);
+    color: var(--clr-neutral-100);
+    font-size: var(--fs-500);
+    justify-self: end;
+    width: fit-content;
+    height: fit-content;
   }
 }
 
@@ -586,8 +616,10 @@ section.cards{
     justify-self: center;
     margin-bottom: 2rem;
   }
+  .archive__card h3{
+    padding-bottom: 1rem;
+  }
 }
-
 
 /*             FOOTER         */
 
@@ -607,7 +639,7 @@ footer{
     align-items: center;
     gap: 0.5rem;
 
-    h3{
+    h4{
         text-transform: uppercase;
         padding: 1rem
     }
@@ -624,14 +656,13 @@ footer{
 max-width: 45ch;
 color: var(--clr-neutral-100);
 
-
   .footer__small-icon{
     padding: 0.7rem 0;
     display: flex;
     gap: 0.5rem;
   }
 
-  h3{
+  h4{
     line-height: 80%;
   }
 }
@@ -651,14 +682,8 @@ color: var(--clr-neutral-100);
   }
 }
 
-@media (max-width: 1280px) {
-
+@media (max-width: 1280px) { 
   .footer__nav{
     display: none;
   }
 }
-
-
-
-
-
