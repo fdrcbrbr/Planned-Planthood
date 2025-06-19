@@ -260,6 +260,43 @@ header{
   } 
 }
 
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .header__nav{
+    display: none;
+  }
+
+  .header__logo{
+    justify-content: start;
+  }
+
+  .hamburger{
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 1rem;
+  }
+
+  .bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--clr-green-400);
+  margin: 0.3rem 0;
+  border-radius: 10%;
+  }
+
+  .bar1 :hover, 
+  .bar2 :hover,
+  .bar3 :hover{
+    background-color: var(--clr-neutral-100);
+  }
+}
+  
+
 
 /*          HERO           */
 
@@ -298,7 +335,7 @@ header{
   aspect-ratio: 1 / 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .hero__img{
   grid-template-columns: repeat(3, 1fr);
   }
@@ -309,7 +346,7 @@ header{
   .hero__img img[data-type="featured-5"] {grid-column: 2 / 3 ;}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero__img{
   grid-template-columns: repeat(2, 1fr);
   }
@@ -364,11 +401,14 @@ header{
     font-size: var(--fs-200);
     text-align: center;
   }
+  .planting__logo svg{
+    stroke: var(--clr-green-400);
+    width: 150x;
+    height: 150px;
+    stroke-width: 5;
+  }
 
-}
-
-
-.planting__logo {
+  .planting__logo {
   padding: 2.5em;
   width: fit-content;
   height: fit-content;
@@ -378,8 +418,27 @@ header{
   svg {
     width: 10rem;
     height: auto;
+    }
   }
 }
+
+@media (max-width: 1280px) {
+  .newsletter_container form{
+    display: grid;
+    width: 70%;
+  }
+
+  .planting__logo{
+    grid-row: -2;
+  }
+
+  .newsletter__input{
+    justify-self: center
+  }
+
+
+}
+
 
 /*            CARDS         */
 
@@ -390,6 +449,12 @@ section.cards{
   margin: 0 auto;
   display: grid;
   grid-template-columns:  repeat(4, 1fr);
+}
+
+@media (max-width: 1280px) {
+  section.cards{
+    grid-template-columns:  repeat(2, 1fr);
+  }
 }
 
 .card{ 
@@ -506,35 +571,32 @@ section.cards{
   padding: 0.5rem;
   background-color: var(--clr-green-400);
   color: var(--clr-neutral-100);
-  font-size: var(--fs-300);
+  font-size: var(--fs-500);
   justify-self: end;
   width: fit-content;
   height: fit-content;
   }
 }
 
+@media (max-width: 1280px) {
+  .archive{
+    display: grid;
+  }
+  .planting__logo{
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+}
+
+
 /*             FOOTER         */
 
 footer{
   margin: 0 auto;
   max-width: 70%;
-  padding-top: 3rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: space-between;
-}
-
-.footer__card{
-max-width: 45ch;
-color: var(--clr-neutral-100);
-
-
-  .small-icon{
-    
-  }
-
-  h3{
-    line-height: 80%;
-  }
 }
 
 .footer__logo{
@@ -549,7 +611,30 @@ color: var(--clr-neutral-100);
         text-transform: uppercase;
         padding: 1rem
     }
+
+    svg{
+    stroke: var(--clr-green-400);
+    width: 42px;
+    height: 42px;
+    stroke-width: 12;
+    }
   }
+
+.footer__card{
+max-width: 45ch;
+color: var(--clr-neutral-100);
+
+
+  .footer__small-icon{
+    padding: 0.7rem 0;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  h3{
+    line-height: 80%;
+  }
+}
 
 .footer__nav{
 
@@ -563,6 +648,13 @@ color: var(--clr-neutral-100);
     color: var(--clr-neutral-100);
     font: var(--fw-600) var(--fs-400)/0.8 var(--font-base);
     color: var(--clr-neutral-100);
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .footer__nav{
+    display: none;
   }
 }
 
