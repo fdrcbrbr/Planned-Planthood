@@ -263,6 +263,8 @@ header{
               a{
       display: block;
       padding: 1vh 0;
+      color: var(--clr-neutral-100);
+      text-decoration: none;
     }
   } 
 }
